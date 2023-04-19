@@ -13,11 +13,11 @@
     "yarn": "1.22.19"
   },
   "scripts": {
-    "build:producer": "yarn workspace @kafka/producer lint",
+    "build:producer": "yarn workspace @kafka/producer build",
     "dev:producer": "yarn workspace @kafka/producer dev",
     "lint:producer": "yarn workspace @kafka/producer lint",
     "test:producer": "yarn workspace @kafka/producer test",
-    "build:consumer": "yarn workspace @kafka/consumer lint",
+    "build:consumer": "yarn workspace @kafka/consumer build",
     "dev:consumer": "yarn workspace @kafka/consumer dev",
     "lint:consumer": "yarn workspace @kafka/consumer lint",
     "test:consumer": "yarn workspace @kafka/consumer test",
