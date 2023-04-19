@@ -1,0 +1,34 @@
+{
+  "name": "kafka-template",
+  "version": "0.0.1",
+  "description": "Kafka Template",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/kafka-template.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GNU GPL 3.0",
+  "private": true,
+  "engines": {
+    "node": "20.0.0",
+    "npm": "9.6.4",
+    "yarn": "1.22.19"
+  },
+  "scripts": {
+    "build:producer": "yarn workspace @kafka/producer lint",
+    "dev:producer": "yarn workspace @kafka/producer dev",
+    "lint:producer": "yarn workspace @kafka/producer lint",
+    "test:producer": "yarn workspace @kafka/producer test",
+    "build:consumer": "yarn workspace @kafka/consumer lint",
+    "dev:consumer": "yarn workspace @kafka/consumer dev",
+    "lint:consumer": "yarn workspace @kafka/consumer lint",
+    "test:consumer": "yarn workspace @kafka/consumer test",
+    "prepare": "husky install || true"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "prettier": "2.8.7",
+    "pretty-quick": "3.1.3"
+  },
+  "workspaces": [
+    "services/*"
+  ]
+}
