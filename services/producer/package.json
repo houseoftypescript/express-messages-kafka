@@ -28,7 +28,7 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "dotenv": "16.0.3",
+    "dotenv": "16.1.4",
     "express": "4.18.2",
     "kafkajs": "2.2.4",
     "pino": "8.14.1",
